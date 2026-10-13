@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p1-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c0e17"/>
+      <stop offset="50%" stop-color="#16192e"/>
+      <stop offset="100%" stop-color="#090a10"/>
+    </linearGradient>
+    <linearGradient id="p1-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5e67e6"/>
+      <stop offset="100%" stop-color="#00d2ff"/>
+    </linearGradient>
+    <radialGradient id="p1-glow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#5e67e6" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#0c0e17" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#p1-bg)"/>
+  <rect width="1200" height="800" fill="url(#p1-glow)"/>
+  <rect width="1200" height="800" fill="url(#grid-pattern)"/>
+
+  <!-- Geometric Abstract 3D Architecture Elements -->
+  <g transform="translate(600, 340)">
+    <!-- Central Hexagonal Core -->
+    <polygon points="0,-120 104,-60 104,60 0,120 -104,60 -104,-60" fill="none" stroke="url(#p1-accent)" stroke-width="3" opacity="0.8"/>
+    <polygon points="0,-80 69,-40 69,40 0,80 -69,40 -69,-40" fill="rgba(94, 103, 230, 0.12)" stroke="#5e67e6" stroke-width="2"/>
+    <polygon points="0,-40 35,-20 35,20 0,40 -35,20 -35,-20" fill="url(#p1-accent)" opacity="0.9"/>
+
+    <!-- Orbiting Network Rings -->
+    <ellipse cx="0" cy="0" rx="260" ry="100" fill="none" stroke="rgba(0, 210, 255, 0.25)" stroke-width="2" stroke-dasharray="8 12"/>
+    <ellipse cx="0" cy="0" rx="340" ry="140" fill="none" stroke="rgba(94, 103, 230, 0.2)" stroke-width="1.5"/>
+
+    <!-- Floating Node Spheres -->
+    <circle cx="-220" cy="-50" r="16" fill="#00d2ff" filter="drop-shadow(0 0 12px #00d2ff)"/>
+    <circle cx="220" cy="50" r="18" fill="#5e67e6" filter="drop-shadow(0 0 16px #5e67e6)"/>
+    <circle cx="160" cy="-90" r="12" fill="#d0ff71" filter="drop-shadow(0 0 10px #d0ff71)"/>
+    <circle cx="-140" cy="80" r="10" fill="#ffffff" opacity="0.8"/>
+
+    <!-- Isometric Data Pipeline Lines -->
+    <line x1="-220" y1="-50" x2="-69" y2="-40" stroke="rgba(0, 210, 255, 0.5)" stroke-width="2"/>
+    <line x1="220" y1="50" x2="69" y2="40" stroke="rgba(94, 103, 230, 0.6)" stroke-width="2"/>
+    <line x1="160" y1="-90" x2="0" y2="-80" stroke="rgba(208, 255, 113, 0.6)" stroke-width="2"/>
+  </g>
+</svg>

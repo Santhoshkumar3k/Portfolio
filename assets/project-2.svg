@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p2-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#120c18"/>
+      <stop offset="50%" stop-color="#1f1124"/>
+      <stop offset="100%" stop-color="#0a070e"/>
+    </linearGradient>
+    <linearGradient id="p2-coral" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff5e62"/>
+      <stop offset="100%" stop-color="#ff9966"/>
+    </linearGradient>
+    <radialGradient id="p2-glow" cx="60%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#ff5e62" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#120c18" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid-pattern-2" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#p2-bg)"/>
+  <rect width="1200" height="800" fill="url(#p2-glow)"/>
+  <rect width="1200" height="800" fill="url(#grid-pattern-2)"/>
+
+  <!-- Flowing Geometric Wave & Spiral Rings -->
+  <g transform="translate(600, 360)">
+    <!-- Intersecting Elliptical Waves -->
+    <ellipse cx="0" cy="0" rx="380" ry="120" fill="none" stroke="rgba(255, 94, 98, 0.3)" stroke-width="2" transform="rotate(-15)"/>
+    <ellipse cx="0" cy="0" rx="340" ry="100" fill="none" stroke="rgba(255, 153, 102, 0.4)" stroke-width="2" transform="rotate(25)"/>
+    <ellipse cx="0" cy="0" rx="280" ry="80" fill="none" stroke="rgba(208, 255, 113, 0.35)" stroke-width="1.5" transform="rotate(-35)"/>
+
+    <!-- Central Glowing Core Sphere -->
+    <circle cx="0" cy="0" r="50" fill="url(#p2-coral)" filter="drop-shadow(0 0 35px #ff5e62)"/>
+    <circle cx="0" cy="0" r="30" fill="#ffffff" opacity="0.4"/>
+
+    <!-- Data Stream Particles -->
+    <circle cx="-180" cy="-60" r="8" fill="#ff9966"/>
+    <circle cx="210" cy="40" r="10" fill="#ff5e62"/>
+    <circle cx="120" cy="-110" r="7" fill="#d0ff71"/>
+    <circle cx="-130" cy="90" r="9" fill="#ffffff" opacity="0.75"/>
+    <circle cx="-270" cy="20" r="6" fill="#ff5e62"/>
+    <circle cx="280" cy="-50" r="7" fill="#ff9966"/>
+
+    <!-- Connecting Dynamic Flow Lines -->
+    <path d="M -300 0 Q -150 -120 0 0 T 300 0" fill="none" stroke="url(#p2-coral)" stroke-width="3" opacity="0.8"/>
+  </g>
+</svg>
